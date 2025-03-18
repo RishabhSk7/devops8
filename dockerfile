@@ -6,6 +6,6 @@ WORKDIR /app
 COPY . /app/
 RUN pipenv install -r requirements.txt
 
-EXPOSE 80
+EXPOSE 8080
 
 CMD pipenv run python3 main.py
