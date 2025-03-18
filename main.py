@@ -4,7 +4,7 @@ import uvicorn
 
 @app.get("/")
 def read_root():
-    return dict(name = "Prateek", Location = "Deheradun")
+    return dict(name = "Rishabh", Location = "Deheradun")
 
 @app.get("/{data}")
 def read_root(data):
