@@ -11,9 +11,8 @@ jobs:
 
         steps: 
             - uses: actions/checkout@v4
-
             - name: Build & Push Image
               run: |
-                echo ${{ secrets.DOCKERTOKEN }} | docker login -u "prateekrajgautam" --password-stdin
-                docker build -t prateekrajgautam/upesmajorproject:v0.1 .
-                docker push prateekrajgautam/upesmajorproject:v0.1
+                echo ${{ secrets.DOCKERTOKEN }} | docker login -u "rishabhrawat167" --password-stdin
+                docker build -t rishabhrawat167/devopslab8:v0.1 .
+                docker push rishabhrawat167/devopslab8:v0.1
